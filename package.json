@@ -1,0 +1,7 @@
+{
+  "name": "stencil",
+  "workspaces": [
+    "packages/core",
+    "packages/adapters"
+  ]
+}

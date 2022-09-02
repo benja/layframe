@@ -1,0 +1,22 @@
+{
+  "name": "stencil-adapters",
+  "version": "1.0.0",
+  "description": "adapters for stencil templates",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "typescript": "^4.8.2"
+  },
+  "workspaces": [
+    "packages/node_server"
+  ],
+  "dependencies": {
+    "html-react-parser": "^3.0.4"
+  }
+}
