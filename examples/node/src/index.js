@@ -1,16 +1,16 @@
-import express, { Request, Response } from 'express';
-import { template } from 'stencil-adapters';
+import express from 'express';
+import { template } from '../../your-template/index';
 import fs from 'fs';
 import path from 'path';
 
 const app = express();
 
-app.get('/index.js', (_, res: Response) => {
+app.get('/index.js', (_, res) => {
   const scriptPath = path.resolve(__dirname, './script.js');
   res.sendFile(scriptPath);
 });
 
-app.get('/', (req: Request, res: Response) => {
+app.get('/', (req, res) => {
   res.send(
     template('<div id="root"></div>', {
       meta: {

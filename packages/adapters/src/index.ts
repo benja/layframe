@@ -1,15 +1,5 @@
 import parse from 'html-react-parser';
 
-// Testing
-
-function t(condition: unknown, truthy: string, falsy: string = '') {
-  return condition ? truthy : falsy;
-}
-
-function createStencil(content: string) {
-  return content.replaceAll('undefined', '');
-}
-
 export function nextAdapter<T>(template: (content: string, options?: T) => string, options?: T) {
   const rootId = 'template-root';
   const templateString = template(`<div id="${rootId}"></div>`, options);

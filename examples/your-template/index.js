@@ -1,6 +1,11 @@
+function t(condition, truthy, falsy = '') {
+  return condition ? truthy : falsy;
+}
+
 export function template(content, options) {
   let scripts = '';
 
+  // Handle JS passed to the options
   if (Array.isArray(options?.js) && options?.js.length) {
     scripts = options?.js
       .map(

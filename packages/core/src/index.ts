@@ -1,3 +1,5 @@
-function createStencil(content: string) {
+export * from './utils';
+
+export function createStencil(content: string) {
   return content.replaceAll('undefined', '');
 }
