@@ -1,5 +1,5 @@
 {
-  "name": "stencil",
+  "name": "layframe",
   "workspaces": [
     "packages/core",
     "packages/adapters"

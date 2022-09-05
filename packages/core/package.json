@@ -1,7 +1,7 @@
 {
-  "name": "stencil-core",
+  "name": "layframe-core",
   "version": "1.0.0",
-  "description": "core logic for stencil templates",
+  "description": "Shared business logic for layframe templates",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

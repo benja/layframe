@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/benja/stencil.git"
+    "url": "git+https://github.com/benja/layframe.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/benja/stencil/issues"
+    "url": "https://github.com/benja/layframe/issues"
   },
-  "homepage": "https://github.com/benja/stencil#readme",
+  "homepage": "https://github.com/benja/layframe#readme",
   "dependencies": {
     "express": "^4.18.1"
   },

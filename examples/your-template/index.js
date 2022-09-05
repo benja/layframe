@@ -1,6 +1,4 @@
-function t(condition, truthy, falsy = '') {
-  return condition ? truthy : falsy;
-}
+import { createFrame, t } from '../../packages/core/dist';
 
 export function template(content, options) {
   let scripts = '';
@@ -21,7 +19,7 @@ export function template(content, options) {
       .join(' ')}></script>`;
   }
 
-  return createStencil(`
+  return createFrame(`
       <!doctype html>
       <html lang="nb-NO">
           <head>
@@ -49,10 +47,7 @@ export function template(content, options) {
               )}
           </head>
           <body>
-              <div>
-                  <h4 style="color: orange;">Hi from template</h4>
-                  ${content}
-              </div>
+              ${content}
               ${scripts}
           </body>
       </html>
