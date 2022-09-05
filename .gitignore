@@ -2,3 +2,4 @@ dist
 .DS_Store
 .env
 tsconfig.tsbuildinfo
+node_modules
