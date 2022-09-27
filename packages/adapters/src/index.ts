@@ -1,6 +1,6 @@
 import parse from 'html-react-parser';
 
-export function nextAdapter<T>(template: (content: string, options?: T) => string, options?: T) {
+export function reactAdapter<T>(template: (content: string, options?: T) => string, options?: T) {
   const templateString = template('', options);
 
   return {

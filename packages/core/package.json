@@ -1,13 +1,17 @@
 {
-  "name": "layframe-core",
+  "name": "layframe",
   "version": "1.0.0",
   "description": "Shared business logic for layframe templates",
   "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsx ./index.ts",
     "watch": "tsx watch ./index.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "preversion": "npm run build"
   },
   "author": "",
   "license": "MIT",

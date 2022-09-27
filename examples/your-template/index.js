@@ -47,7 +47,6 @@ export function template(content, options) {
               )}
           </head>
           <body>
-              ${content}
               ${scripts}
           </body>
       </html>
