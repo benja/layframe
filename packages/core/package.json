@@ -11,7 +11,9 @@
     "dev": "tsx ./index.ts",
     "watch": "tsx watch ./index.ts",
     "build": "tsc",
-    "preversion": "npm run build"
+    "preversion": "npm run build",
+    "version": "npm publish",
+    "postversion": "git push --follow-tags"
   },
   "author": "",
   "license": "MIT",
